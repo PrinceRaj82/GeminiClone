@@ -37,8 +37,8 @@ export default function main() {
                 <img src={assets.code_icon} alt ="" />
             </div>
             </div>
-          </>:<div className="reasult">
-            <div className="reasult-title">
+          </>:<div className="result">
+            <div className="result-title">
                 <img src={assets.user_icon} alt="" />
                 <p>{recentPrompt}</p>
             </div>

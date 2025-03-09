@@ -35,12 +35,12 @@ const ContextProvider=(props)=>{
            if(i===0 || 1%2 !==1){
             newResponse+=responseArrary[i]
            }else{
-            newResponse+="<b>"+responseArrary[i]+"</b>"
+            newResponse+=responseArrary[i]
            }
         }
 
         let newResponse2nd=newResponse.split('*')
-        let newResponseArrary=newResponse2nd.split(" ")
+        let newResponseArrary=newResponse2nd
 
         for(let i=0;i<newResponseArrary.length;i++){
             const newxtWord=newResponseArrary[i];
