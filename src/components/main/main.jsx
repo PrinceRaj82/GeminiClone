@@ -44,7 +44,12 @@ export default function main() {
             </div>
             <div className="result-data">
                 <img src={assets.gemini_icon} alt="" />
-                <p dangerouslySetInnerHTML={{__html:resultData}}></p>
+                {loading?<div className='loder'>
+                    <hr />
+                    <hr />
+                    <hr />
+                </div>:
+                <p dangerouslySetInnerHTML={{__html:resultData}}></p>}
             </div>
             </div>}
 
@@ -54,7 +59,7 @@ export default function main() {
                     <div>
                         <img src={assets.gallery_icon} alt="" />
                         <img src={assets.mic_icon} alt="" />
-                        <img onClick={()=>onSent()} src={assets.send_icon} alt="" />
+                        {input?<img onClick={()=>onSent()} src={assets.send_icon} alt="" />:null}
                     </div>
                 </div>
                 <p className="bottom-info">Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps</p>
